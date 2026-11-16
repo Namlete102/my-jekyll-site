@@ -1,0 +1,26 @@
+title: jekyll-latex
+description: Write markdown posts with LaTeX typography
+baseurl: ""
+url: ""
+
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+  input: GFM
+
+plugins:
+  - jekyll-toc
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
