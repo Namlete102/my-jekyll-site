@@ -1,7 +1,9 @@
 title: jekyll-latex
 description: Write markdown posts with LaTeX typography
-baseurl: ""
-url: ""
+
+# QUAN TRỌNG: đặt đúng tên repo của bạn
+baseurl: "/my-jekyll-site"      # ← tên repo GitHub của bạn
+url: "https://github.com/Namlete102/my-jekyll-site" # ← tên repo GitHub của bạn
 
 markdown: kramdown
 kramdown:
@@ -18,9 +20,3 @@ defaults:
       type: "pages"
     values:
       layout: "default"
-
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
