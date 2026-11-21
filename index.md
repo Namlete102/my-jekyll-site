@@ -71,8 +71,8 @@ The real numbers $\mathbb{R}$ are uncountable
 {% raw %}
 {% endtheorem %}
 {% endraw %}
-</pre>
 </code>
+</pre>
 
 ## Proofs
 
