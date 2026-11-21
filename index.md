@@ -42,7 +42,7 @@ y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j $$
 + Add the line
   
 <pre>
-<code>
+<code class="language-html">
 <link rel="stylesheet" href="https://latex.vercel.app/style.css">
 </code>
 </pre>
@@ -53,7 +53,7 @@ to the <kbd><head></kbd> of your website or install the package using npm instal
 bla bla . . .
 
 <pre>
-<code>
+<code class="language-html">
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </code>
 </pre>
@@ -228,6 +228,24 @@ sharpening the axe.
 ```
 
 # Mathematics: 
+
+## Display math:
+
+\begin{equation}
+    S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
+        = \frac{1}{n}\sum_{i}^{n} X_i\
+    \label{eq:1}
+\end{equation} 
+
+$$
+\begin{equation} \tag{1.1}
+E = m \cdot c^2
+\end{equation}
+$$
+
+Tham chiếu chéo \eqref{eq:1}
+
+## Long equation:
 
 Áp dụng nhị thức Newton để khai triển $(1+x)^{n}$, ta được:
 
