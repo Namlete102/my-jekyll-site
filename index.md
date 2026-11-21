@@ -9,10 +9,6 @@ This project is called jekyll-latex. It allows you to write markdown posts using
 $$ J(\theta) =\frac{1}{2m}
 [\sum^m_{i=1}(h_\theta(x^{(i)}) -
 y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j $$
-or
-$$(1+x)^{n}=1+n x+\frac{n(n-1)}{2 !} x^{2}+\frac{n(n-1)(n-2)}{3 !} x^{3}+\frac{n(n-1)(n-2)(n-3)}{4 !}
-        x^{4}+\frac{n(n-1)(n-2)(n-3)(n-4)}{5 !}
-        x^{5}+\ldots$$
 {% endabstract %}
 
 ```
@@ -193,7 +189,7 @@ sharpening the axe.
 
 ## Images
 
-{% include image.liquid url="/assets/latex_image_example.jpeg" description="Mountain landscape by John Towner." %}
+{% include image.liquid url="https://images.unsplash.com/photo-1477346611705-65d1883cee1e?auto=format&fit=crop&w=1000&q=80" description="Mountain landscape by John Towner." %}
 
 ```
 {% raw %}
@@ -203,15 +199,6 @@ sharpening the axe.
 %}
 {% endraw %}
 ```
-
-<figure>
-    <img src="https://images.unsplash.com/photo-1477346611705-65d1883cee1e?auto=format&fit=crop&w=1000&q=80"
-          loading="lazy" alt="Mountain landscape" width="600" height="400" />
-    <figcaption>
-        Mountain landscape by
-        <a href="https://unsplash.com/@heytowner">John Towner</a>.
-    </figcaption>
-</figure>
 
 ## Lists
 
@@ -240,6 +227,14 @@ sharpening the axe.
 1. List Item 3
 {% endraw %}
 ```
+
+# Mathematics: 
+
+$$
+(1+x)^{n}=1+n x+\frac{n(n-1)}{2 !} x^{2}+\frac{n(n-1)(n-2)}{3 !} x^{3}+\frac{n(n-1)(n-2)(n-3)}{4 !}
+        x^{4}+\frac{n(n-1)(n-2)(n-3)(n-4)}{5 !}
+        x^{5}+\ldots
+$$
 
 --- 
 
