@@ -493,6 +493,19 @@ dl dd {
   text-align: center;
 }
 
+/* Definition */
+.definition {
+  counter-increment: definition;
+  display: block;
+  margin: 12px 0;
+  font-style: normal;
+}
+.definition::before {
+  content: 'Definition ' counter(definition) '. ';
+  font-weight: bold;
+  font-style: normal;
+}
+
 /* Theorem */
 .theorem {
   counter-increment: theorem;
@@ -508,13 +521,13 @@ dl dd {
 
 /* Lemma */
 .lemma {
-  counter-increment: theorem;
+  counter-increment: lemma;
   display: block;
   margin: 12px 0;
   font-style: italic;
 }
 .lemma::before {
-  content: 'Lemma ' counter(theorem) '. ';
+  content: 'Lemma ' counter(lemma) '. ';
   font-weight: bold;
   font-style: normal;
 }
@@ -536,19 +549,6 @@ dl dd {
   position: absolute;
   right: -12px;
   bottom: -2px;
-}
-
-/* Definition */
-.definition {
-  counter-increment: definition;
-  display: block;
-  margin: 12px 0;
-  font-style: normal;
-}
-.definition::before {
-  content: 'Definition ' counter(definition) '. ';
-  font-weight: bold;
-  font-style: normal;
 }
 
 /* Center align author name, use small caps and add vertical spacing  */

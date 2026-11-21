@@ -9,6 +9,10 @@ This project is called jekyll-latex. It allows you to write markdown posts using
 $$ J(\theta) =\frac{1}{2m}
 [\sum^m_{i=1}(h_\theta(x^{(i)}) -
 y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j $$
+or
+$$(1+x)^{n}=1+n x+\frac{n(n-1)}{2 !} x^{2}+\frac{n(n-1)(n-2)}{3 !} x^{3}+\frac{n(n-1)(n-2)(n-3)}{4 !}
+        x^{4}+\frac{n(n-1)(n-2)(n-3)(n-4)}{5 !}
+        x^{5}+\ldots$$
 {% endabstract %}
 
 ```
@@ -37,11 +41,50 @@ y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j $$
 {% endraw %}
 ```
 
+# Getting started 
+
++ Add the line
+  
+```html
+<link rel="stylesheet" href="https://latex.vercel.app/style.css">
+```
+
+to the `<head>` of your website or install the package using npm install `latex.css`. 
+
+
+bla bla . . .
+
+```html
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+```
+
 # Theorems, Definitions, and Proofs
+
+## Theorems
 
 {% theorem %}
 The real numbers $\mathbb{R}$ are uncountable
 {% endtheorem %}
+
+<pre>
+<code>
+{% raw %}
+{% theorem %}
+{% endraw %}
+The real numbers $\mathbb{R}$ are uncountable
+{% raw %}
+{% endtheorem %}
+{% endraw %}
+</pre>
+</code>
+
+## Lemmas
+
+{% lemma}
+An even number plus an even number results in an even number. 
+{% endlemma}
+
+## Proofs
 
 {% proof %}
 If $\mathbb{R}$ is countable, then [0, 1] is countable as well. Hence there exists a map
@@ -56,14 +99,6 @@ contradiction.
 
 <pre>
 <code>
-{% raw %}
-{% theorem %}
-{% endraw %}
-The real numbers $\mathbb{R}$ are uncountable
-{% raw %}
-{% endtheorem %}
-{% endraw %}
-
 {% raw %}
 {% proof %}
 {% endraw %}
@@ -81,6 +116,12 @@ with $\bar{c}_{i} \neq c_{i}(i)$. Obviously $C(n) \neq x$ for all $n \in
 </code>
 </pre>
 
+
+# Sidenotes
+
+Chú thích đầu tiên link[^first]
+
+Chú thích thứ hai link[^second]
 
 # HTML Elements
 
@@ -163,6 +204,15 @@ sharpening the axe.
 {% endraw %}
 ```
 
+<figure>
+    <img src="https://images.unsplash.com/photo-1477346611705-65d1883cee1e?auto=format&fit=crop&w=1000&q=80"
+          loading="lazy" alt="Mountain landscape" width="600" height="400" />
+    <figcaption>
+        Mountain landscape by
+        <a href="https://unsplash.com/@heytowner">John Towner</a>.
+    </figcaption>
+</figure>
+
 ## Lists
 
 ### Unordered List
@@ -190,3 +240,9 @@ sharpening the axe.
 1. List Item 3
 {% endraw %}
 ```
+
+--- 
+
+[^first]: First
+
+[^second]: Second
