@@ -47,6 +47,10 @@ y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j $$
 </code>
 </pre>
 
+```html
+<link rel="stylesheet" href="https://latex.vercel.app/style.css">
+```
+
 to the <kbd><head></kbd> of your website or install the package using npm install `latex.css`. 
 
 
@@ -231,11 +235,13 @@ sharpening the axe.
 
 ## Display math:
 
+$$
 \begin{equation}
     S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
         = \frac{1}{n}\sum_{i}^{n} X_i\
     \label{eq:1}
 \end{equation} 
+$$
 
 $$
 \begin{equation} \tag{1.1}
