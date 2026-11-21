@@ -16,24 +16,15 @@
   </main>
   <!-- MathJax để render công thức $$...$$ -->
   <script>
-    MathJax = {
+    window.MathJax = {
       tex: {
-        inlineMath: [['$', '$'],],
+        tags: 'ams',  // Điểm mấu chốt: bật đánh số AMS
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']]
       },
-    }
-    const typeFaceToggle = document.getElementById('typeface-toggle')
-    const typeface = document.getElementById('typeface')
-    typeFaceToggle.addEventListener('click', () => {
-      document.body.classList.toggle('libertinus')
-      typeface.textContent = document.body.classList.contains('libertinus') ? 'Libertinus' : 'Latin Modern'
-    })
-
-    const darkModeToggle = document.getElementById('dark-mode-toggle')
-    darkModeToggle.addEventListener('click', () => {
-      document.body.classList.toggle('latex-dark')
-    })
+      svg: { fontCache: 'global' }
+    };
   </script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <script async src="{{ '/assets/latex.js' | relative_url }}"></script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </body>
 </html>
