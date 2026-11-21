@@ -76,9 +76,9 @@ The real numbers $\mathbb{R}$ are uncountable
 
 ## Lemmas
 
-{% lemma}
+{% lemma %}
 An even number plus an even number results in an even number. 
-{% endlemma}
+{% endlemma %}
 
 ## Proofs
 
