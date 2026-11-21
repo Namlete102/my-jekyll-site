@@ -1,6 +1,6 @@
 ---
-title: What Is jekyll-latex?
-author: John Doe
+title: My 's first jekyll theme
+author: Namlete
 layout: default
 ---
 
@@ -43,7 +43,7 @@ y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j $$
   
 <pre>
 <code>
-    <link rel="stylesheet" href="https://latex.vercel.app/style.css">
+<link rel="stylesheet" href="https://latex.vercel.app/style.css">
 </code>
 </pre>
 
@@ -54,7 +54,7 @@ bla bla . . .
 
 <pre>
 <code>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </code>
 </pre>
 
@@ -122,7 +122,7 @@ Chú thích thứ hai link[^second]
 
 This sentence is **bold**. This sentence is *italic*. <small>Small</small> text is for fine print. Your copy can also be <sub>subscripted</sub> and <sup>superscripted</sup>, <ins>inserted</ins>, ~~deleted~~, or <mark>highlighted</mark>. You would use a [hyperlink](https://github.com/ryanmcdermott/jekyll-latex) to go to a new page. Keyboard input elements like <kbd>Cmd + Shift</kbd> are used to display textual user input.
 
-Chèn link trực tiếp: https://github.com/Namlete102/my-jekyll-site
+Chèn link trực tiếp: [https://github.com/Namlete102/my-jekyll-site](https://github.com/Namlete102/my-jekyll-site)
 
 ```
 This sentence is **bold**. This sentence is *italic*.

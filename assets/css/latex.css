@@ -259,7 +259,7 @@ a:focus {
 }
 
 /* Make images easier to work with */
-image {
+img {
   max-width: 100%;
   height: auto;
   display: block;
@@ -493,30 +493,6 @@ dl dd {
   text-align: center;
 }
 
-/* allow scroll on the x-axis */
-.scroll-wrapper {
-  overflow-x: auto;
-}
-
-/* if a table is wrapped in a scroll wrapper,
-  the table cells shouldn't wrap */
-.scroll-wrapper > table td {
-  white-space: nowrap;
-}
-
-/* Definition */
-.definition {
-  counter-increment: definition;
-  display: block;
-  margin: 12px 0;
-  font-style: normal;
-}
-.definition::before {
-  content: 'Definition ' counter(definition) '. ';
-  font-weight: bold;
-  font-style: normal;
-}
-
 /* Theorem */
 .theorem {
   counter-increment: theorem;
@@ -560,6 +536,19 @@ dl dd {
   position: absolute;
   right: -12px;
   bottom: -2px;
+}
+
+/* Definition */
+.definition {
+  counter-increment: definition;
+  display: block;
+  margin: 12px 0;
+  font-style: normal;
+}
+.definition::before {
+  content: 'Definition ' counter(definition) '. ';
+  font-weight: bold;
+  font-style: normal;
 }
 
 /* Center align author name, use small caps and add vertical spacing  */
