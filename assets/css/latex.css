@@ -521,13 +521,13 @@ dl dd {
 
 /* Lemma */
 .lemma {
-  counter-increment: lemma;
+  counter-increment: theorem;
   display: block;
   margin: 12px 0;
   font-style: italic;
 }
 .lemma::before {
-  content: 'Lemma ' counter(lemma) '. ';
+  content: 'Lemma ' counter(theorem) '. ';
   font-weight: bold;
   font-style: normal;
 }

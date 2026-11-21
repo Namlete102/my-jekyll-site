@@ -74,12 +74,6 @@ The real numbers $\mathbb{R}$ are uncountable
 </pre>
 </code>
 
-## Lemmas
-
-{% lemma %}
-An even number plus an even number results in an even number. 
-{% endlemma %}
-
 ## Proofs
 
 {% proof %}
