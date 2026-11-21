@@ -41,18 +41,22 @@ y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j $$
 
 + Add the line
   
-```html
-<link rel="stylesheet" href="https://latex.vercel.app/style.css">
-```
+<pre>
+<code>
+    <link rel="stylesheet" href="https://latex.vercel.app/style.css">
+</code>
+</pre>
 
-to the `<head>` of your website or install the package using npm install `latex.css`. 
+to the <kbd><head></kbd> of your website or install the package using npm install `latex.css`. 
 
 
 bla bla . . .
 
-```html
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-```
+<pre>
+<code>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</code>
+</pre>
 
 # Theorems, Definitions, and Proofs
 
@@ -106,7 +110,6 @@ with $\bar{c}_{i} \neq c_{i}(i)$. Obviously $C(n) \neq x$ for all $n \in
 </code>
 </pre>
 
-
 # Sidenotes
 
 Chú thích đầu tiên link[^first]
@@ -118,6 +121,8 @@ Chú thích thứ hai link[^second]
 ## Text Formatting
 
 This sentence is **bold**. This sentence is *italic*. <small>Small</small> text is for fine print. Your copy can also be <sub>subscripted</sub> and <sup>superscripted</sup>, <ins>inserted</ins>, ~~deleted~~, or <mark>highlighted</mark>. You would use a [hyperlink](https://github.com/ryanmcdermott/jekyll-latex) to go to a new page. Keyboard input elements like <kbd>Cmd + Shift</kbd> are used to display textual user input.
+
+Chèn link trực tiếp: https://github.com/Namlete102/my-jekyll-site
 
 ```
 This sentence is **bold**. This sentence is *italic*.
@@ -183,7 +188,7 @@ sharpening the axe.
 
 ## Images
 
-{% include image.liquid url="https://images.unsplash.com/photo-1477346611705-65d1883cee1e?auto=format&fit=crop&w=1000&q=80" description="Mountain landscape by John Towner." %}
+{% include image.liquid url="https://images.unsplash.com/photo-1477346611705-65d1883cee1e?auto=format&fit=crop&w=1000&q=80" description="Mountain landscape by John Towner." width="60%" %}
 
 ```
 {% raw %}
@@ -223,6 +228,8 @@ sharpening the axe.
 ```
 
 # Mathematics: 
+
+Áp dụng nhị thức Newton để khai triển $(1+x)^{n}$, ta được:
 
 $$
 (1+x)^{n}=1+n x+\frac{n(n-1)}{2 !} x^{2}+\frac{n(n-1)(n-2)}{3 !} x^{3}+\frac{n(n-1)(n-2)(n-3)}{4 !}
