@@ -488,14 +488,43 @@ nav ol > li::before {
   padding-right: 0.85rem;
 }
 
-/* Nhắm mục tiêu vào container công thức dạng khối do MathJax 3 tạo ra */
+/* ===== Cuộn ngang cho công thức dài (MathJax 3) ===== */
+
+/* Container bao ngoài công thức dạng khối */
 mjx-container[display="true"] {
-    display: block !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    max-width: 100% !important;
-    /* Tùy chọn: thêm một chút khoảng trống bên dưới để thanh cuộn không quá sát */
-    padding-bottom: 0.5em;
+  display: block !important;
+  max-width: 100% !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  /* Tạo khoảng trống cho thanh cuộn không đè lên công thức */
+  padding-bottom: 0.5em;
+  /* Căn trái để công thức bắt đầu từ lề trái khi cuộn */
+  text-align: left !important;
+}
+
+/* Phần tử math bên trong: giữ nguyên kích thước tự nhiên để tràn ra, kích hoạt cuộn */
+mjx-container[display="true"] > mjx-math {
+  display: inline-block !important;
+  min-width: max-content;
+}
+
+/* Tùy chọn: làm thanh cuộn mảnh và đẹp hơn (WebKit) */
+mjx-container[display="true"]::-webkit-scrollbar {
+  height: 6px;
+}
+mjx-container[display="true"]::-webkit-scrollbar-thumb {
+  background: var(--table-border-color, #888);
+  border-radius: 3px;
+  opacity: 0.6;
+}
+mjx-container[display="true"]::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Tùy chọn: Firefox */
+mjx-container[display="true"] {
+  scrollbar-width: thin;
+  scrollbar-color: var(--table-border-color, #888) transparent;
 }
 
 /* Center definitions (most useful for display equations) */
