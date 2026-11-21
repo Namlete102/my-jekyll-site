@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/latex.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/latex.css' | relative_url }}">
 
   <!-- MathJax để render công thức $$...$$ -->
   <script>
@@ -23,5 +23,7 @@
 
     {{ content }}
   </main>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script async src="{{ '/assets/latex.js' | relative_url }}"></script>
 </body>
 </html>
