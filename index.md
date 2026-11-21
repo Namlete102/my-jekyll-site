@@ -40,12 +40,6 @@ y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j $$
 # Getting started 
 
 + Add the line
-  
-<pre>
-<code class="language-html">
-<link rel="stylesheet" href="https://latex.vercel.app/style.css">
-</code>
-</pre>
 
 ```html
 <link rel="stylesheet" href="https://latex.vercel.app/style.css">
@@ -56,11 +50,9 @@ to the <kbd><head></kbd> of your website or install the package using npm instal
 
 bla bla . . .
 
-<pre>
-<code class="language-html">
+```html
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-</code>
-</pre>
+```
 
 # Theorems, Definitions, and Proofs
 
@@ -159,6 +151,36 @@ Triple Integral
 </code>
 </pre>
 
+# Mathematics: 
+
+## Display math:
+
+$$
+\begin{equation}
+    S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
+        = \frac{1}{n}\sum_{i}^{n} X_i
+    \label{eq:1}
+\end{equation}
+$$
+
+$$
+\begin{equation} \tag{1.1}
+E = m \cdot c^2
+\end{equation}
+$$
+
+Tham chiếu chéo \eqref{eq:1}
+
+## Long equation:
+
+Áp dụng nhị thức Newton để khai triển $(1+x)^{n}$, ta được:
+
+$$
+(1+x)^{n}=1+n x+\frac{n(n-1)}{2 !} x^{2}+\frac{n(n-1)(n-2)}{3 !} x^{3}+\frac{n(n-1)(n-2)(n-3)}{4 !}
+        x^{4}+\frac{n(n-1)(n-2)(n-3)(n-4)}{5 !}
+        x^{5}+\ldots
+$$
+
 ## Blockquotes
 
 > Give me six hours to chop down a tree and I will spend the first four sharpening the axe.
@@ -230,38 +252,6 @@ sharpening the axe.
 1. List Item 3
 {% endraw %}
 ```
-
-# Mathematics: 
-
-## Display math:
-
-$$
-\begin{equation}
-    S_n = \frac{X_1 + X_2 + \cdots + X_n}{n}
-        = \frac{1}{n}\sum_{i}^{n} X_i
-    \label{eq:1}
-\end{equation}
-$$
-
-$$
-\begin{equation} \tag{1.1}
-E = m \cdot c^2
-\end{equation}
-$$
-
-Tham chiếu chéo \eqref{eq:1}
-
-## Long equation:
-
-Áp dụng nhị thức Newton để khai triển $(1+x)^{n}$, ta được:
-
-$$
-(1+x)^{n}=1+n x+\frac{n(n-1)}{2 !} x^{2}+\frac{n(n-1)(n-2)}{3 !} x^{3}+\frac{n(n-1)(n-2)(n-3)}{4 !}
-        x^{4}+\frac{n(n-1)(n-2)(n-3)(n-4)}{5 !}
-        x^{5}+\ldots
-$$
-
---- 
 
 [^first]: First
 

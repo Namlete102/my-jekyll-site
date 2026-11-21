@@ -488,11 +488,6 @@ nav ol > li::before {
   padding-right: 0.85rem;
 }
 
-/* Center definitions (most useful for display equations) */
-dl dd {
-  text-align: center;
-}
-
 /* Nhắm mục tiêu vào container công thức dạng khối do MathJax 3 tạo ra */
 mjx-container[display="true"] {
     display: block !important;
@@ -501,6 +496,11 @@ mjx-container[display="true"] {
     max-width: 100% !important;
     /* Tùy chọn: thêm một chút khoảng trống bên dưới để thanh cuộn không quá sát */
     padding-bottom: 0.5em;
+}
+
+/* Center definitions (most useful for display equations) */
+dl dd {
+  text-align: center;
 }
 
 /* Theorem */
