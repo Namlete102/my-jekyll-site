@@ -1,5 +1,5 @@
 ---
-title: My 's first jekyll theme
+title: My's first jekyll theme
 author: Namlete
 layout: default
 ---

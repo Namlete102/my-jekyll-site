@@ -6,16 +6,6 @@
   <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <link rel="stylesheet" href="{{ '/assets/latex.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/prism.css' | relative_url }}">
-
-  <!-- MathJax để render công thức $$...$$ -->
-  <script>
-    window.MathJax = {
-      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']],
-             displayMath: [['$$','$$'], ['\\[','\\]']] },
-      svg: { fontCache: 'global' }
-    };
-  </script>
-  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
 </head>
 <body class="{% if page.body_class %}{{ page.body_class }}{% endif %}">
   <main>
@@ -24,6 +14,25 @@
 
     {{ content }}
   </main>
+  <!-- MathJax để render công thức $$...$$ -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'],],
+      },
+    }
+    const typeFaceToggle = document.getElementById('typeface-toggle')
+    const typeface = document.getElementById('typeface')
+    typeFaceToggle.addEventListener('click', () => {
+      document.body.classList.toggle('libertinus')
+      typeface.textContent = document.body.classList.contains('libertinus') ? 'Libertinus' : 'Latin Modern'
+    })
+
+    const darkModeToggle = document.getElementById('dark-mode-toggle')
+    darkModeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('latex-dark')
+    })
+  </script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <script async src="{{ '/assets/latex.js' | relative_url }}"></script>
 </body>
